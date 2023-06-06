@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Express.js generated files
+dist/
+build/
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+
+# Environment variables
+.env
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
