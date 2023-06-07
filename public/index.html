@@ -10,25 +10,56 @@
 
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
-        <h1 class="text-2xl font-bold mb-4">PDF Generator</h1>
+        <h1 class="text-2xl font-bold mb-4 text-center"><a href="/">PDF Generator</a></h1>
 
-        <form class="max-w-md bg-white rounded-lg shadow-md p-6 mx-auto">
+        <form action="/print" class="max-w-md bg-white rounded-lg shadow-md p-6 mx-auto">
+            <div class="mb-4">
+                <label for="startNumber" class="block font-semibold mb-2">Start #:</label>
+                <input type="number" min="1" step="1" value="1" id="startNumber" name="startNumber" class="border border-gray-300 rounded-md w-full px-3 py-2">
+            </div>
+
+            <div class="mb-4">
+                <label for="endNumber" class="block font-semibold mb-2">End #:</label>
+                <input type="number" min="1" step="1" value="1" id="endNumber" name="endNumber" class="border border-gray-300 rounded-md w-full px-3 py-2">
+            </div>
+
             <div class="mb-4">
                 <label for="name" class="block font-semibold mb-2">Name:</label>
-                <input type="text" id="name" name="name" class="border border-gray-300 rounded-md w-full px-3 py-2"
-                    required>
+                <input type="text" id="name" name="name" class="border border-gray-300 rounded-md w-full px-3 py-2">
+            </div>
+
+            <div class="mb-4">
+                <label for="dyeLot" class="block font-semibold mb-2">Dye Lot:</label>
+                <input type="text" id="dyeLot" name="dyeLot" class="border border-gray-300 rounded-md w-full px-3 py-2">
+            </div>
+
+            <div class="mb-4">
+                <label for="rollNumber" class="block font-semibold mb-2">Roll #:</label>
+                <input type="text" id="rollNumber" name="rollNumber"
+                    class="border border-gray-300 rounded-md w-full px-3 py-2">
             </div>
 
             <div class="mb-4">
                 <label for="type" class="block font-semibold mb-2">Type:</label>
-                <input type="text" id="type" name="type" class="border border-gray-300 rounded-md w-full px-3 py-2"
-                    required>
+                <input type="text" id="type" name="type" class="border border-gray-300 rounded-md w-full px-3 py-2">
             </div>
 
             <div class="mb-4">
-                <label for="container" class="block font-semibold mb-2">Container:</label>
-                <input type="text" id="container" name="container"
-                    class="border border-gray-300 rounded-md w-full px-3 py-2" required>
+                <label for="soNumber" class="block font-semibold mb-2">SO #:</label>
+                <input type="text" id="soNumber" name="soNumber"
+                    class="border border-gray-300 rounded-md w-full px-3 py-2">
+            </div>
+
+            <div class="mb-4">
+                <label for="containerNumber" class="block font-semibold mb-2">Container #:</label>
+                <input type="text" id="containerNumber" name="containerNumber"
+                    class="border border-gray-300 rounded-md w-full px-3 py-2">
+            </div>
+
+            <div class="mb-4">
+                <label for="linearFeet" class="block font-semibold mb-2">Linear Feet:</label>
+                <input type="text" id="linearFeet" name="linearFeet"
+                    class="border border-gray-300 rounded-md w-full px-3 py-2">
             </div>
 
             <div class="flex justify-center">
